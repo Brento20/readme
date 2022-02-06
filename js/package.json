@@ -1,0 +1,22 @@
+{
+  "name": "readme",
+  "version": "1.0.0",
+  "description": "\"A node js grenerator to build readme files\"",
+  "main": "readMeGen.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brento20/readme.git"
+  },
+  "author": "Brenton Weaver",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Brento20/readme/issues"
+  },
+  "homepage": "https://github.com/Brento20/readme#readme",
+  "dependencies": {
+    "inquire": "^0.4.8"
+  }
+}

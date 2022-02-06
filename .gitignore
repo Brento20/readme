@@ -1,3 +1,9 @@
+#folders
+node_modules
+
+#mac OS
+.DS_store
+
 # Logs
 logs
 *.log
