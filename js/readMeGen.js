@@ -63,9 +63,9 @@ Version Comments: ${versionComments}
 ## License:
 ![badge](https://img.shields.io/badge/license-${license}-brightgreen)<br />
 
-${license}
+* ${license}
 
-`
+` 
 
 inquirer
 .prompt([
