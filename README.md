@@ -2,10 +2,21 @@
 # Read Me Maker v1.0 
 ![badge](https://img.shields.io/badge/license-MIT-brightgreen)<br />
 
+**Repository Link:** https://github.com/Brento20/readme
+
+**Deployed Link:** N/A - no HTML deployed
+
+<br>
+<br>
+
+---
+
 ## Table of Contents
 - [Description](#description)
 - [Technologies Used](#Technologies)
 - [Installing](#installing)
+
+<br>
 
 ## Description:
 
@@ -29,11 +40,15 @@
 
 ## Installing:
 
-* Download and open in VS Code. Run "npm install" to install dependencies and run "node readMeGen.js" 
+* Download and open in VS Code. Run "npm install" to install dependencies and run "node readMeGen.js" Please ensure you have Node.js installed.
 
 <br>
 
 ---
+
+## Using the command line/terminal 
+
+![user demonstration](./video/usercase.gif)
 
 ## Author:
 
