@@ -3,6 +3,7 @@ const fs = require('fs');
 
 const generateREADME = ({project, name, what, how, who, choices, email, github, license, install, versionComments,}) =>  ` 
 # ${project} 
+![badge](https://img.shields.io/badge/license-${license}-brightgreen)<br />
 
 ## Table of Contents
 - [Description](#description)
@@ -60,6 +61,7 @@ Version Comments: ${versionComments}
 ---
 
 ## License:
+![badge](https://img.shields.io/badge/license-${license}-brightgreen)<br />
 
 ${license}
 
