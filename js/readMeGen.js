@@ -9,7 +9,7 @@ const generateREADME = ({project, name, what, how, who, choices, email, github, 
 - [Technologies Used](#Technologies)
 - [Installing](#installing)
 
-## Description
+## Description:
 
 *${what}*
 
@@ -21,7 +21,7 @@ const generateREADME = ({project, name, what, how, who, choices, email, github, 
 
 ---
 
-## Technologies Used
+## Technologies Used:
 
 * ${choices}
 
@@ -29,7 +29,7 @@ const generateREADME = ({project, name, what, how, who, choices, email, github, 
 
 ---
 
-## Installing
+## Installing:
 
 * ${install}
 
@@ -37,7 +37,7 @@ const generateREADME = ({project, name, what, how, who, choices, email, github, 
 
 ---
 
-## Authors
+## Author:
 
 Please reach out to the author below if you would like to contribute to this code.
 
@@ -51,7 +51,7 @@ Github: ${github}
 
 ---
 
-## Version History
+## Version History:
 
 Version Comments: ${versionComments}
 
@@ -59,13 +59,11 @@ Version Comments: ${versionComments}
 
 ---
 
-## License
+## License:
 
 ${license}
 
 `
-
-
 
 inquirer
 .prompt([
@@ -129,8 +127,6 @@ inquirer
         type: 'input',
         message: 'More details about version: ',
         name: 'versionComments',
-        },
-    
-    
+    },  
 ])
 .then(answers => fs.writeFile("./result/README.md", generateREADME(answers), err => err ? console.log(err) : console.log("✔️ File Made")))
