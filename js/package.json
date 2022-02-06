@@ -1,7 +1,7 @@
 {
   "name": "readme",
   "version": "1.0.0",
-  "description": "\"A node js grenerator to build readme files\"",
+  "description": "\"A node js generator to build readme files\"",
   "main": "readMeGen.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Brento20/readme#readme",
   "dependencies": {
-    "inquire": "^0.4.8"
+    "inquire": "^0.4.8",
+    "inquirer": "^8.2.0"
   }
 }
