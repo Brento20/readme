@@ -1,21 +1,25 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-const generateREADME = ({ name, email, project, description, choices, linkedin}) =>  ` 
-# Project Title - ${project}
+const generateREADME = ({ name, email, project, what, how, who, choices, github}) =>  ` 
+# ${project} 
 
 
 
 ## Description
 
-${description}
+${what}
+
+${how}
+
+${who}
 
 
 ## Getting Started
 
 ### Technologies Used
 
-* 
+* ${choices}
 
 ### Installing
 
@@ -28,7 +32,7 @@ Name: ${name}
 
 Email: ${email}
 
-Linked in: ${linkedin}
+Github: ${github}
 
 
 
@@ -36,7 +40,7 @@ Linked in: ${linkedin}
 
 ## Version History
 
-* ${choices}
+
 
 
 ## License
@@ -49,14 +53,21 @@ inquirer
 .prompt([
     {
     type: 'input',
-    message: 'Authors full name?',
+    message: 'Authors Full Name?',
     name: 'name',
     },
     {
     type: 'input',
-    message: 'Authors Email?',
+    message: 'Authors Email:',
     name: 'email',
     },
+
+    {
+    type: 'input',
+    message: 'Github Username:',
+    name: 'github',
+    },
+
     {
     type: 'input',
     message: 'Project Title?',
@@ -64,8 +75,18 @@ inquirer
     },
     {
     type: 'input',
-    message: 'Project Description?',
-    name: 'description',
+    message: 'What problem will your application solve?',
+    name: 'what',
+    },
+    {
+    type: 'input',
+    message: 'How will your application work?',
+    name: 'how',
+    },
+    {
+    type: 'input',
+    message: 'Who will use your application solve?',
+    name: 'who',
     },
     {
     type: 'checkbox',
